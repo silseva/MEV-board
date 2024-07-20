@@ -1,0 +1,188 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Nuovi_componenti:FAN3217 U8
+U 1 1 60B50A61
+P 4100 4475
+F 0 "U8" H 3725 5000 50  0000 C CNN
+F 1 "FAN3217" H 3850 4925 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4150 4025 50  0001 L CNN
+F 3 "" H 4100 4575 50  0001 C CNN
+	1    4100 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R33
+U 1 1 60B50DC7
+P 5125 3575
+F 0 "R33" V 4920 3575 50  0000 C CNN
+F 1 "100Ω" V 5011 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5165 3565 50  0001 C CNN
+F 3 "~" H 5125 3575 50  0001 C CNN
+	1    5125 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR066
+U 1 1 60B55BF5
+P 5650 3825
+F 0 "#PWR066" H 5650 3575 50  0001 C CNN
+F 1 "GND" H 5655 3652 50  0000 C CNN
+F 2 "" H 5650 3825 50  0001 C CNN
+F 3 "" H 5650 3825 50  0001 C CNN
+	1    5650 3825
+	1    0    0    -1  
+$EndComp
+Text HLabel 5700 3300 2    50   Output ~ 0
+HPO1
+Wire Wire Line
+	5275 3575 5350 3575
+Wire Wire Line
+	5650 3775 5650 3825
+Wire Wire Line
+	5700 3300 5650 3300
+Wire Wire Line
+	5650 3300 5650 3375
+$Comp
+L Device:R_US R34
+U 1 1 60B5C512
+P 6625 3575
+F 0 "R34" V 6420 3575 50  0000 C CNN
+F 1 "100Ω" V 6511 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6665 3565 50  0001 C CNN
+F 3 "~" H 6625 3575 50  0001 C CNN
+	1    6625 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR067
+U 1 1 60B5C518
+P 7150 3825
+F 0 "#PWR067" H 7150 3575 50  0001 C CNN
+F 1 "GND" H 7155 3652 50  0000 C CNN
+F 2 "" H 7150 3825 50  0001 C CNN
+F 3 "" H 7150 3825 50  0001 C CNN
+	1    7150 3825
+	1    0    0    -1  
+$EndComp
+Text HLabel 7200 3300 2    50   Output ~ 0
+HPO2
+Wire Wire Line
+	6775 3575 6850 3575
+Wire Wire Line
+	7150 3775 7150 3825
+Wire Wire Line
+	7150 3300 7150 3375
+Wire Wire Line
+	7150 3300 7200 3300
+Wire Wire Line
+	4500 4275 4800 4275
+Wire Wire Line
+	4800 4275 4800 3575
+Wire Wire Line
+	4800 3575 4975 3575
+Wire Wire Line
+	4500 4375 6400 4375
+Wire Wire Line
+	6400 4375 6400 3575
+Wire Wire Line
+	6400 3575 6475 3575
+$Comp
+L power:GND #PWR064
+U 1 1 60B62FED
+P 4100 4725
+F 0 "#PWR064" H 4100 4475 50  0001 C CNN
+F 1 "GND" H 4105 4552 50  0000 C CNN
+F 2 "" H 4100 4725 50  0001 C CNN
+F 3 "" H 4100 4725 50  0001 C CNN
+	1    4100 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 60B63465
+P 4300 3850
+F 0 "C25" V 4048 3850 50  0000 C CNN
+F 1 "100nF" V 4150 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4338 3700 50  0001 C CNN
+F 3 "~" H 4300 3850 50  0001 C CNN
+	1    4300 3850
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+5V #PWR063
+U 1 1 60B63FD2
+P 4100 3725
+F 0 "#PWR063" H 4100 3575 50  0001 C CNN
+F 1 "+5V" H 4115 3898 50  0000 C CNN
+F 2 "" H 4100 3725 50  0001 C CNN
+F 3 "" H 4100 3725 50  0001 C CNN
+	1    4100 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR065
+U 1 1 60B65515
+P 4500 3850
+F 0 "#PWR065" H 4500 3600 50  0001 C CNN
+F 1 "GND" H 4505 3677 50  0000 C CNN
+F 2 "" H 4500 3850 50  0001 C CNN
+F 3 "" H 4500 3850 50  0001 C CNN
+	1    4500 3850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4100 3975 4100 3850
+Connection ~ 4100 3850
+Wire Wire Line
+	4100 3850 4100 3725
+Wire Wire Line
+	4100 3850 4150 3850
+Wire Wire Line
+	4450 3850 4500 3850
+Wire Wire Line
+	4100 4675 4100 4725
+Text HLabel 3450 4275 0    50   Input ~ 0
+CMD1
+Text HLabel 3450 4375 0    50   Input ~ 0
+CMD2
+Wire Wire Line
+	3450 4275 3700 4275
+Wire Wire Line
+	3700 4375 3450 4375
+$Comp
+L Nuovi_componenti:DMN4800LSS Q1
+U 1 1 60B0F51D
+P 5550 3575
+F 0 "Q1" H 5754 3621 50  0000 L CNN
+F 1 "DMN4800LSS" H 5754 3530 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5750 3475 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31736.pdf" H 5550 3575 50  0001 L CNN
+	1    5550 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nuovi_componenti:DMN4800LSS Q2
+U 1 1 60B1093D
+P 7050 3575
+F 0 "Q2" H 7254 3621 50  0000 L CNN
+F 1 "DMN4800LSS" H 7254 3530 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7250 3475 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31736.pdf" H 7050 3575 50  0001 L CNN
+	1    7050 3575
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
